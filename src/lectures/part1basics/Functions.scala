@@ -1,5 +1,7 @@
 package lectures.part1basics
 
+import scala.annotation.tailrec
+
 object Functions extends App {
 
   def someBasicParameterFunction(someString: String, someInt: Int): String = {
