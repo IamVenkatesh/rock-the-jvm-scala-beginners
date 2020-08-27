@@ -6,9 +6,9 @@ object MethodNotation extends App {
     def likes(movie: String): Boolean = movie == favouriteMovie
     def marry(person: Person): String = s"$name is going to marry ${person.name}"
     def marry(nickName: String): Person = new Person(s"$name ($nickName)", favouriteMovie)
-    def isAlive(): Boolean = true
+    def isAlive: Boolean = true
     def unary_+ : Person = new Person(name, favouriteMovie, age + 1)
-    def learns(name: String): String = s"${this.name} is learning ${name}"
+    def learns(name: String): String = s"${this.name} is learning $name"
     def learnScala: String = this learns "Scala"
 
     def apply(): String = s"Hi, my name is $name and my age is ${this.age}.I like to watch $favouriteMovie"
